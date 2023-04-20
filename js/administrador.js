@@ -1,5 +1,9 @@
 import Pelicula from "./classPelicula.js";
 
+let formularioPeliculas = document.getElementById("formPelicula");
+
+formularioPeliculas.addEventListener("submit", prepararFormularioPelicula);
+
 const peliculaEjemplo = new Pelicula(
     "0001",
     "El Padrino",
@@ -13,3 +17,9 @@ const peliculaEjemplo = new Pelicula(
   );
 
   console.log(peliculaEjemplo);
+
+//   la e se puede usar en una funcion anonima tmb
+  function prepararFormularioPelicula(e) {
+    e.preventDefault();
+console.log("en el evento submit");
+  }
