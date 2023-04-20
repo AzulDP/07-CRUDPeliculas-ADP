@@ -1,3 +1,7 @@
+// leer del localStorage el tema o usaer el valor por defecto dark
+let temaConfigurado = JSON.parse(localStorage.getItem("theme")) || "dark";
+cambiarTema(temaConfigurado);
+
 let btnDarkTheme = document.getElementById("btnDarkTheme");
 let btnLightTheme = document.getElementById("btnLightTheme");
 
@@ -12,5 +16,7 @@ function cambiarTema(color){
 document.querySelector("html").setAttribute('data-bs-theme', color);
 
     console.log(color);
+    //  guardar en localstorage (objetos y metodos de JS listos)
+    localStorage.setItem("theme", JSON.stringify(color));
 
 }
