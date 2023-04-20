@@ -19,4 +19,5 @@ document.querySelector("html").setAttribute('data-bs-theme', color);
     //  guardar en localstorage (objetos y metodos de JS listos)
     localStorage.setItem("theme", JSON.stringify(color));
 //  queda como tarea agregar un cambio para el valor de light dark q quea de la luna o el sol de acuerdo
+
 }
