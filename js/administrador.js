@@ -22,4 +22,9 @@ const peliculaEjemplo = new Pelicula(
   function prepararFormularioPelicula(e) {
     e.preventDefault();
 console.log("en el evento submit");
+crearPelicula();
+  }
+
+  function crearPelicula(){
+    
   }
