@@ -9,8 +9,8 @@
         #pais;
         #reparto;
       
-        constructor(codigo, titulo, descripcion, imagen, genero, anio, duracion, pais, reparto) {
-          this.#codigo = codigo;
+        constructor(titulo, descripcion, imagen, genero, anio, duracion, pais, reparto) {
+          this.#codigo = 0;
           this.#titulo = titulo;
           this.#descripcion = descripcion;
           this.#imagen = imagen;
